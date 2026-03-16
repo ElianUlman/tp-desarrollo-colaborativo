@@ -1,21 +1,39 @@
-body {
-    font-family: Arial, sans-serif; 
+body{
     margin:0;
-    background: #f4f4f4;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
 }
 
-.navbar {
+.navbar{
     display: flex;
     justify-content: space-between;
-    background: #003366;
-    color: white;
-    padding: 15px;
+    align-items: center;
+    background-color: #0b4a7a;
+    padding: 15px 30px;
 }
 
-nav a {
+.navbar h2{
     color: white;
-    margin-left: 15px; 
-    text-decoration:none;
+    margin: 0;
+}
+
+.navbar nav{
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a:hover{
+    background-color: #155a96;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    background-color: #1e73be;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 .hero {
@@ -33,16 +51,48 @@ button {
     cursor: pointer;
 }
 
-button hover {
-    background: #e68900;
+button {
+    background-color: #e68900;
+    border-radius: 50px;
 }
 
-.propuesta {
-    width: 400px;
-    margin: auto;
-    margin-top: 40px;
+button:hover{
+    background-color: #e42cd5;
+
+}
+
+.propuesta h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.propuesta{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.formPropuesta{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+}
+
+.formPropuesta input{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.formPropuesta button{
+    margin-top: 10px;
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
 }
 
 input {
@@ -50,10 +100,10 @@ input {
     margin-bottom: 10px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    background: #003366;
-    color: white;
+footer{
+    margin-top:auto;
+    background-color:#0b3a6e;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
