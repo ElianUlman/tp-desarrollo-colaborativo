@@ -1,59 +1,59 @@
-body{
-font-family: Arial, sans-serif
-margin:0;
-background:#f4f4f4;
+body {
+    font-family: Arial, sans-serif; 
+    margin:0;
+    background: #f4f4f4;
 }
 
-.navbar{
-display:flex;
-justify-content:space-between;
-background:#003366;
-color:white;
-padding:15px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #003366;
+    color: white;
+    padding: 15px;
 }
 
-nav a{
-color:white;
-margin-left:15px
-text-decoration:none;
+nav a {
+    color: white;
+    margin-left: 15px; 
+    text-decoration:none;
 }
 
-.hero{
-text-align:center;
-padding:80px;
-background:linear-gradient(135deg,#2193b0,#6dd5ed);
-color:white;
+.hero {
+    text-align: center;
+    padding: 80px;
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    color: white;
 }
 
-button{
-background:#ff9800;
-border:none;
-padding:12px 20px;
-color:white;
-cursor:pointer;
+button {
+    background: #ff9800;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    cursor: pointer;
 }
 
-button hover{
-background:#e68900;
+button hover {
+    background: #e68900;
 }
 
-.propuesta{
-width:400px;
-margin:auto;
-margin-top:40px;
-display:flex;
-flex-direction:column;
+.propuesta {
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
-input{
-padding:10px;
-margin-bottom:10px;
+input {
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-footer{
-text-align:center;
-margin-top:50px;
-padding:20px;
-background:#003366;
-color:white;
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background: #003366;
+    color: white;
 }
