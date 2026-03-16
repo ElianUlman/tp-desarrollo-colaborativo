@@ -64,7 +64,9 @@ body{
     background: linear-gradient(135deg, #2193b0, #6dd5ed);
     color: white;
 }
-
+#mensaje{
+    font-weight: bold;
+}
 button {
     background: #ff9800;
     border: none;
@@ -149,5 +151,37 @@ footer{
     background-color:#0b3a6e;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:2%;
+    padding-right: 10%;
+    padding-left: 5%;
+    display: flex;
+    gap: 16px;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+.redesLink{
+    display: flex;
+
+  align-items: center;
+}
+
+.redesLink ul{
+    display: flex;
+  gap: 16px;
+
+  align-items: center;
+
+}
+.redesLink ul li{
+    list-style: none;
+}
+
+.redesLink ul li a{
+    color: white;
+    text-decoration: none;
+}
+.redesLink ul li a:hover{
+    text-decoration: underline;
 }
