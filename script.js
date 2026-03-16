@@ -13,8 +13,8 @@ if (boton && textoVotos) {
 
     })
 }
-
-
+const ultimaPropuestaText=document.getElementById("ultimaPropuesta")
+const ultimoNombrePropuesta=document.getElementById("nombreUltimaPropuesta")
 const form = document.getElementById("formPropuesta")
 let mensaje = document.getElementById("mensaje")
 
@@ -24,6 +24,7 @@ if (form && mensaje) {
         let nombre = document.getElementById("nombre").value.trim()
         let idea = document.getElementById("idea").value.trim()
 
+        
 
         mensaje.innerText = ""
 
@@ -45,7 +46,14 @@ if (form && mensaje) {
             mensaje.style.color = "red"
             mensaje.innerText = "La propuesta debe tener al menos 10 caracteres"
             return
+        }else{
+            e.preventDefault()
+            ultimaPropuestaText.textContent=idea
+            ultimoNombrePropuesta.textContent="por: "+nombre
+            return
         }
+
+        
 
     })
 }
