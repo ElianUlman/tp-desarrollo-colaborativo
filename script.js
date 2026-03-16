@@ -3,29 +3,49 @@ let votos = 0
 const boton = document.getElementById("votar")
 const textoVotos = document.getElementById("contador")
 
-boton.addEventListener("click", function () {
+if (boton && textoVotos) {
+    boton.addEventListener("click", function () {
 
-    votos = votos + 1
+        votos = votos + 1
+        textoVotos.innerText = "Votos: " + votos
 
-    textoVotos.innerText = "Votos: " + votos
+        console.log("voto registrado")
 
-    console.log("voto registrado")
-
-})
+    })
+}
 
 
 const form = document.getElementById("formPropuesta")
+let mensaje = document.getElementById("mensaje")
 
-form.addEventListener("submit", function (e) {
+if (form && mensaje) {
+    form.addEventListener("submit", function (e) {
 
-    let nombre = document.getElementById("nombre").value
-    let idea = document.getElementById("idea").value
+        let nombre = document.getElementById("nombre").value.trim()
+        let idea = document.getElementById("idea").value.trim()
 
-    if (nombre.trim() === "" || idea.trim() === "") {
 
-        e.preventDefault()
-        document.getElementById("mensaje").innerText = "Completa todos los campos"
+        mensaje.innerText = ""
 
-    }
+        if (nombre === "") {
+            e.preventDefault()
+            mensaje.style.color = "red"
+            mensaje.innerText = "El nombre es obligatorio"
+            return
+        }
 
-})
+        if (idea === "") {
+            e.preventDefault()
+            mensaje.style.color = "red"
+            mensaje.innerText = "La propuesta es obligatoria"
+            return
+        }
+        else if (idea.length < 10) {
+            e.preventDefault()
+            mensaje.style.color = "red"
+            mensaje.innerText = "La propuesta debe tener al menos 10 caracteres"
+            return
+        }
+
+    })
+}
