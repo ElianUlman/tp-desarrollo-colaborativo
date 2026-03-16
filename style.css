@@ -1,3 +1,7 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 body{
     margin:0;
     min-height:100vh;
@@ -6,11 +10,26 @@ body{
 }
 
 .navbar{
+    width: 95%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     display: flex;
     justify-content: space-between;
+
     align-items: center;
     background-color: #0b4a7a;
-    padding: 15px 30px;
+    position: sticky;
+    top: 0px;
+    
+}
+.navbar ul{
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .navbar h2{
@@ -34,6 +53,9 @@ body{
     padding: 8px 15px;
     border-radius: 8px;
     transition: 0.3s;
+}
+.navbar nav ul li{
+    list-style: none;
 }
 
 .hero {
@@ -70,6 +92,8 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .formPropuesta{
@@ -98,6 +122,26 @@ button:hover{
 input {
     padding: 10px;
     margin-bottom: 10px;
+}
+
+.ultimaPropuesta{
+    padding-bottom: 3%;
+    padding-top: 1%;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    align-items: center;
+    border-top: #0b3a6e 3px solid;
+}
+.ultimaPropuesta div{
+    background-color: rgb(193, 206, 221);
+    padding: 2%;
+    border-radius: 10px;
 }
 
 footer{
